@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true })); // Increase U
 // Routes
 app.use('/api/v1/category', categoryRouter);
 app.use('/api/v1/card', cardRouter);
-app.use('/users', authRouter);
+app.use('/api/v1/users', authRouter);
 app.use('/api/v1/blog', blogRouter);
 
 // Connect to database
